@@ -1,0 +1,19 @@
+.nav-bar {
+  display: flex;
+  padding: 0.5rem 1rem;
+  background: #eee;
+
+  &__item {
+    margin: 0;
+    color: #323232;
+    font-size: 1.2rem;
+
+    &--logo {
+      text-transform: uppercase;
+    }
+
+    & + & {
+      margin: 0 0.5rem;
+    }
+  }
+}
