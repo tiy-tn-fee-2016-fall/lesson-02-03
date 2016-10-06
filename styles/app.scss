@@ -1,6 +1,8 @@
 // @import 'yoga-sass/assets/yoga';
 // @import 'normalize-css/normalize';
 
+$c-black: #888;
+
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
@@ -12,8 +14,8 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 .pricing-card  {
   position: relative;
   min-width: 18rem;
-  border: 0.1rem solid black;
-  background: #eee;
+  border: 0.1rem solid $c-black;
+  background: #fff;
   text-align: center;
 
   &:hover {
@@ -28,7 +30,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     bottom: 100%;
     width: 100%;
     padding: 1rem;
-    border: 0.1rem solid black;
+    border: 0.1rem solid $c-black;
     background: blue;
     color: #eee;
     text-transform: uppercase;
@@ -39,7 +41,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     }
 
     &--black {
-      background: black;
+      background: $c-black;
     }
 
     h1 {
@@ -65,6 +67,36 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     padding: 1rem;
   }
 }
+
+.collection {
+  margin: 0;
+  border-top: 0.1rem solid $c-black;
+  border-bottom: 0.1rem solid $c-black;
+  background: #fff;
+
+  &__item {
+    padding: 0.5rem;
+    border-bottom: 0.1rem solid $c-black;
+
+    &:nth-of-type(even) {
+      background: rgba(#aaa, 0.2);
+    }
+
+    &:last-of-type {
+      border-bottom: 0;
+    }
+  }
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: inherit;
+  font-family: inherit;
+  background: none;
+  border: 0.1rem solid $c-black;
+  border-radius: 1rem;
+}
+
 
 .lower-nav {
   background: red;
