@@ -10,3 +10,24 @@
     background: green;
   }
 }
+
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: -1rem;
+
+  &__item {
+    flex-grow: 1;
+    margin: 1rem;
+
+    &--third {
+      width: calc(100% / 3 - 2rem);
+    }
+  }
+}
