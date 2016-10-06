@@ -9,6 +9,43 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'components/nav-bar';
 @import 'components/section';
 
+.pricing-card  {
+  min-width: 18rem;
+  border: 0.1rem solid black;
+  background: #eee;
+  text-align: center;
+
+  &__header  {
+    padding: 1rem;
+    background: blue;
+    color: #eee;
+    text-transform: uppercase;
+    overflow: auto;
+
+    h1 {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: normal;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 0.8rem;
+      font-weight: normal;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 0.8rem;
+      font-weight: lighter;
+    }
+  }
+
+  &__btn-container {
+    padding: 1rem;
+  }
+}
+
 .lower-nav {
   background: red;
 }
