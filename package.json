@@ -8,7 +8,7 @@
     "test": "ember test -s",
     "build": "ember build",
     "lint": "./node_modules/.bin/sass-lint",
-    "deploy": "ember build -e production && cp dist/index.html dist/200.html && surge dist my-app.surge.sh"
+    "deploy": "ember build -e production && cp dist/index.html dist/200.html && surge dist princing-table-ryan.surge.sh"
   },
   "author": "",
   "license": "ISC",
